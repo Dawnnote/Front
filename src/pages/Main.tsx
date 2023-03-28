@@ -5,12 +5,9 @@ import "../styles/Main.css";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import React from "react";
-// import useUser from "src/lib/useUser";
-
 
 
 export default function Main() {
-  // const {userLoading, isAuthenticated, user} = useUser();
   return (
     <Layout>
       <Container id="main_contain">

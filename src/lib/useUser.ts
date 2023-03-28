@@ -3,11 +3,11 @@ import { getMe } from "src/api";
 
 export default function useUser() {
   const { isLoading, data, isError } = useQuery(["me"], getMe, {
-    retry: false,
+    retry: false
   });
   return {
-    userLoading: isLoading,
+    userLoading :isLoading,
     user: data,
-    isAuthenticated: !isError,
-  };
+    isLoggedIn: !isError
+  }
 }
