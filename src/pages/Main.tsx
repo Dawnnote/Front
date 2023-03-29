@@ -5,10 +5,12 @@ import "../styles/Main.css";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import React from "react";
+import ProtectedPage from "src/components/ProtectedPage";
 
 
 export default function Main() {
   return (
+    <ProtectedPage>
     <Layout>
       <Container id="main_contain">
         <Carousels id="main_carousels" />
@@ -44,5 +46,6 @@ export default function Main() {
         </motion.div>
       </Container>
     </Layout>
+    </ProtectedPage>
   );
 }
